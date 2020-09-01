@@ -17,3 +17,10 @@ Then container launch would look like:
 The container terminate would look like:
 
 ``./dockerstop.sh``
+
+## HTTP Proxy
+Then you can use the http proxy in your web browser.
+
+Example for puppeteer:
+
+``puppeteer.launch({ args: ['--proxy-server=localhost:8040'] })``
