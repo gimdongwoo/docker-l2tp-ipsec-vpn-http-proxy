@@ -1,0 +1,17 @@
+version: '3'
+services:
+  vpn_proxy:
+    build: .
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    environment:
+      - VPN_PUBLIC_IP=vpn.xxxx.com
+      - VPN_LOCAL_IP=192.168.0.2
+      - VPN_IPSEC_PSK=xxxx
+      - VPN_USER=xxxx
+      - VPN_PASSWORD=xxxx
+    ports:
+      - 8080:8080
+    restart: always
+    privileged: true
