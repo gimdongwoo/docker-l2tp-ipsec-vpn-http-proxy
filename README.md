@@ -1,5 +1,5 @@
 # HTTP Proxy through IPSEC L2TP VPN Client on Docker
-Docker earley-stage image to run an IPsec VPN client, with IPsec/L2TP, based on : https://github.com/emmdim/docker-ipsec-vpn-client
+Docker image to run HTTP Proxy through IPsec VPN client, with IPsec/L2TP, based on : https://github.com/emmdim/docker-ipsec-vpn-client
 
 ## HOW TO
 After cloning the repo modify `docker-compose.yml` file
