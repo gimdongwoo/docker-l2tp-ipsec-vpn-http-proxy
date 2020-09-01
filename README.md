@@ -7,8 +7,8 @@ After cloning the repo modify `docker-compose.yml` file
 Below environment variables need to be passed by `docker-compose.yml`:
 
 * `VPN_IPSEC_PSK`, `VPN_USER`, `VPN_PASSWORD` provided from your VPN provider
-* the provider's IP is passed as `VPN_PUBLIC_IP` 
-* and the local host ip should be passed as well, named `VPN_LOCAL_IP`
+* the vpn provider's Host or IP is passed as `VPN_PUBLIC_IP` 
+* and your local host ip should be passed as well, named `VPN_LOCAL_IP`
 
 Then container launch would look like:
 
