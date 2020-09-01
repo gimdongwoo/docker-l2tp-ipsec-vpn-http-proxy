@@ -12,6 +12,6 @@ services:
       - VPN_USER=xxxx
       - VPN_PASSWORD=xxxx
     ports:
-      - 8080:8080
+      - 8040:8040
     restart: always
     privileged: true

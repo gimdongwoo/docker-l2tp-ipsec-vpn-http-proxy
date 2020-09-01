@@ -16,6 +16,6 @@ COPY app /app
 RUN find /app -name run.sh | xargs chmod u+x
 RUN dpkg --unpack /app/xl2tpd_1.3.11-1_amd64.deb && rm /var/lib/dpkg/info/xl2tpd.postinst && dpkg --configure xl2tpd
 
-EXPOSE 8080
+EXPOSE 8040
 
 CMD ["/app/run.sh"]
