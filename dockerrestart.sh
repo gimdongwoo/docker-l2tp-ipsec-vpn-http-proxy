@@ -5,6 +5,3 @@ docker-compose -f docker-compose.yml down
 
 echo "START DOCKER"
 docker-compose -f docker-compose.yml up -d
-
-echo "REMOVE UNUSED IMAEGE"
-docker rmi $(docker images -q -f dangling=true)
